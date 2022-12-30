@@ -11,7 +11,7 @@
 
 <body>
     <header class="container">
-        <nav class="navbar navbar-expand-lg bg-light">
+        <nav class="navbar navbar-expand-lg fixed-top bg-light">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="images/logo.png" alt="Bootstrap">
@@ -27,13 +27,13 @@
                             <a class="nav-link active" aria-current="page" href="#">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shoes</a>
+                            <a class="nav-link" href="#shoes">Shoes</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Backpacks</a>
+                            <a class="nav-link" href="#backpack">Backpack</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="#subscribe">Subscribe</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -135,7 +135,7 @@
         </section>
         <!-- categories end -->
         <!-- shoes section start -->
-        <section class="container my-5">
+        <section class="container my-5" id="shoes">
             <h2>Shoes</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -184,7 +184,7 @@
         </section>
         <!-- shoes section end -->
         <!-- Backpack section starts -->
-        <section class="container my-5">
+        <section class="container my-5" id="backpack">
             <h2>Backpack</h2>
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
                 <div class="col">
@@ -193,10 +193,8 @@
                         <div class="card-body">
                             <h5 class="card-title">Red Laltu Bag</h5>
                             <h2>$160</h2>
-                            <p class="card-text">The YEEZY BOOST 350 V2 features an upper composed of re-engineered
-                                Primeknit. Reflective threads are woven into the laces. The midsole utilizes adidas'
-                                innovative BOOST™
-                                technology.</p>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic delectus
+                                neque officia sunt quas cum ad itaque voluptatem vel quos.</p>
                         </div>
                         <div class="m-3">
                             <div class="btn btn-warning">Buy Now</div>
@@ -207,9 +205,10 @@
                     <div class="card border border-0 shadow-lg h-100">
                         <img src="images/bags/bag-2.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Nike Air Zoom</h5>
+                            <h5 class="card-title">Blue Niltu Bag</h5>
                             <h2>$160</h2>
-                            <p class="card-text">A great running shoe for both men and women.</p>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic delectus
+                                neque officia sunt quas cum ad itaque voluptatem vel quos.</p>
                         </div>
                         <div class="m-3">
                             <div class="btn btn-warning">Buy Now</div>
@@ -220,9 +219,10 @@
                     <div class="card border border-0 shadow-lg h-100">
                         <img src="images/bags/bag-3.png" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="card-title">Nike Air Max (Red)</h5>
+                            <h5 class="card-title">Black Kaltu Bag</h5>
                             <h2>$160</h2>
-                            <p class="card-text">A great running shoe for both men and women.</p>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic delectus
+                                neque officia sunt quas cum ad itaque voluptatem vel quos.</p>
                         </div>
                         <div class="m-3">
                             <div class="btn btn-warning">Buy Now</div>
@@ -232,7 +232,26 @@
             </div>
         </section>
         <!-- Backpack section ends -->
+        <!-- Subscribe section starts -->
+        <section style="height: 300px;"
+            class="container rounded-3 d-flex justify-content-center align-items-center bg-info" id="subscribe">
+            <!-- we align divs vertically using "align-items" and we align divs horizontally using "justify content. justify content and align items have to encapsulate at least a single div tag to have an impact such as seen here, a div tag is under a section tag." -->
+            <div>
+                <h2>Stay in touch with us!</h2>
+                <p>Get updates on sales, specials and more</p>
+                <form>
+                    <div class="mb-3">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+        </section>
+        <!-- Subscribe section ends -->
     </main>
+    <footer class="mt-5 text-center">
+        <p><small>© 2023. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
